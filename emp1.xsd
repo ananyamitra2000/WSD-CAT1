@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<em:schema xmlns:em="http://www.w3.org/2001/XMLSchema">
+<em:element name = "Company">
+   <em:complexType>
+      <em:sequence>
+       <em:element name = "Employee" maxOccurs = "unbounded">
+   <em:complexType>
+      <em:sequence>
+         <em:element name ="ID" type = "em:integer">
+            </em:element>
+         <em:element name ="Name" type = "em:string">
+            </em:element>
+         <em:element name ="Age" type = "em:integer">
+           </em:element>
+           <em:element name ="Salary" type = "mysalary">
+           </em:element>
+           <em:element name ="email" type = "em:string">
+           </em:element>
+           <em:element name ="MobNum" type = "em:int">
+           </em:element>
+           <em:element name ="Designation" type = "em:string">
+           </em:element>
+           
+           </em:sequence>
+           </em:complexType>
+           </em:element>
+           
+           </em:sequence>
+           </em:complexType>
+           </em:element>
+           
+           <em:simpleType name = "mysalary">
+           <em:restriction base =  "em:float">
+           <em:minInclusive value ="50,000"></em:minInclusive>
+           <em:maxInclusive value ="2,00,000"></em:maxInclusive>
+           </em:restriction>
+           </em:simpleType>
